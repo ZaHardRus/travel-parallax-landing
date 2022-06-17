@@ -1,5 +1,3 @@
-import news from '../data/news.json'
-
 const isProd = process.argv.includes("--production")
 const isDev = !isProd
 export default {
@@ -13,9 +11,6 @@ export default {
     },
     pug: {
         pretty: isDev,
-        data: {
-            news
-        }
     },
     webpack: {
         mode: isProd ? 'production' : 'development'
