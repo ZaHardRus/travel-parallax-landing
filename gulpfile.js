@@ -36,7 +36,7 @@ export {script, html, scss, clear, images, fonts}
 
 export const build = gulp.series(
     clear,
-    gulp.parallel(html, scss, script, images, fonts),
+    gulp.parallel(html, scss, images, fonts, script),
 )
 export const dev = gulp.series(
     build,
