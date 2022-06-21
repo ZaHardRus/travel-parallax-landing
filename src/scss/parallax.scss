@@ -71,14 +71,14 @@
       top: 0;
       left: 0;
     }
-    .images-parallax__mount,
+    .images-parallax__mountain,
     .images-parallax__human,
     .images-parallax__overlay{
       position: absolute;
       width: 100%;
       height: 100%;
     }
-    .images-parallax__mount{
+    .images-parallax__mountain{
       background:url('../assets/images/background.png') center / cover  no-repeat;
       top: 0;
       z-index: 2;

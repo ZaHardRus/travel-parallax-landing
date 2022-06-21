@@ -8,8 +8,22 @@
     margin-bottom: 60px;
     z-index: 3;
     .logo{
-      font-size: 36px;
-      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: .3s;
+      span{
+        font-size: 24px;
+        font-style: italic;
+        font-family: 'Patrick Hand', cursive;
+        color:#ecbc4c;
+      }
+      &:hover{
+        transform: scale(1.025)
+      }
+      
     }
     .navigation-wrapper{
       list-style: none;
@@ -39,9 +53,9 @@
       gap: 20px;
       color: #fff;
       text-decoration: none;
-      transition: .5s;
+      transition: .3s;
       &:hover{ 
-        transform:scale(1.2)
+        transform:scale(1.025)
       }
     }
   }

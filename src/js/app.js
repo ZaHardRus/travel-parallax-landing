@@ -3,10 +3,10 @@ window.onload = () => {
     
     if(parallax){
         const content = document.querySelector('.parallax__container')
-        const mount = document.querySelector('.images-parallax__mount')
+        const mountain = document.querySelector('.images-parallax__mountain')
         const human = document.querySelector('.images-parallax__human')
 
-        const forMount = 10;
+        const forMountain = 10;
         const forHuman = 7.5;
 
         const speed = 0.005;
@@ -21,7 +21,7 @@ window.onload = () => {
             posX = posX + (distX * speed);
             posY = posY + (distY * speed);
 
-            mount.style.cssText = `transform: translate(${posX / forMount}%,${posY/forMount}%)`;
+            mountain.style.cssText = `transform: translate(${posX / forMountain}%,${posY/forMountain}%)`;
             human.style.cssText = `transform: translate(${-posX / forHuman}%,${posY/forHuman}%)`;
 
             requestAnimationFrame(setMouseParallaxStyle)
@@ -57,7 +57,7 @@ window.onload = () => {
 
         function setParallaxItemStyle(scrollPercent){
             content.style.cssText = `transform: translate(0%,-${scrollPercent / 45}%)`
-            mount.parentElement.style.cssText = `transform: translate(0%,-${scrollPercent / 30}%)`
+            mountain.parentElement.style.cssText = `transform: translate(0%,-${scrollPercent / 30}%)`
             human.parentElement.style.cssText = `transform: translate(0%,-${scrollPercent / 2}%)`
         }
     }

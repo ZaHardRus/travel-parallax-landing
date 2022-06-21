@@ -17,6 +17,8 @@ footer{
                 font-size: 38px;
                 font-weight: bold;
                 margin-bottom: 24px;
+                color:#FBD784;
+                cursor: pointer;
             }
             .direction{
                 font-weight: 700;
@@ -43,13 +45,13 @@ footer{
                     font-weight: 500;
                     font-size: 18px;
                     line-height: 32px;
-                    transition: .5s;
+                    transition: .3s;
                     a{
                         text-decoration: none;
                         color:#fff;
                     }
                     &:hover{
-                        transform:scale(1.1)
+                        transform:scale(1.025)
                     }
                 }
             }
